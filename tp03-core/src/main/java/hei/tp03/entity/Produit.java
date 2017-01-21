@@ -13,6 +13,7 @@ public class Produit {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
+    @Column(name="nom")
     private String nom;
 
     @ManyToOne
