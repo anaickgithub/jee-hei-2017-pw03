@@ -5,7 +5,6 @@ import javax.persistence.*;
 /**
  * Created by Anaïck on 21/01/2017.
  */
-
 @Entity
 public class Produit {
 
