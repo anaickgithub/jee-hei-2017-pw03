@@ -31,8 +31,8 @@ public class ClientServlet extends HttpServlet {
             throws ServletException, IOException {
         PrintWriter out = res.getWriter();
         List<Client> listeClient = clientService.findAll();
-        for (Client c : listeClient)
-            out.write(c.getNom());
+        for (Client client:listeClient)
+            out.println("Client: "+client.getId()+", "+client.getNom()+", "+client.getPrenom());
     }
 
     public void destroy(){
